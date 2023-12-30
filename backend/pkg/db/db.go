@@ -1,6 +1,7 @@
 package db
 
 import (
+	cfg "blogsite/backend/pkg/config"
 	"database/sql"
 	"fmt"
 	"log"
@@ -8,7 +9,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-var dbUrl = "root:123@tcp(127.0.0.1:3306)/users"
+var dbUrl = cfg.DatabaseString
 
 type Database struct {
 	*sql.DB

@@ -1,5 +1,4 @@
 package config
 
-func getCfg() {
-
-}
+var Port = ":8080"                                        // Port to the listener
+var DatabaseString = "root:123@tcp(127.0.0.1:3306)/users" // String to the database
